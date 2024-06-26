@@ -1,27 +1,56 @@
 html{
-
     background-color: white;
     border: solid black;
-    margin: auto;
+    margin: 10px 50px;
+}
+
+body{
+    font-family: sans-serif;
 }
 
 header{
-    margin: -2px;
+    
     padding: 8px;
     background-color: lightblue;
     text-align: center;
 }
 
-header ul li{
-    display: inline;
+header h1{
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+}
+
+
+header ul{
+    
     color:black;
     font-weight: bold;
-      padding: 8px;
-      background-color: lightblue; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction:row;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: larger;
+    
 }
+
+header ul li{
+    
+    padding: 5px 10%;
+    border: black solid;
+    background-color: white; 
+    text-decoration: underline;
+    text-align: center;
+    
+}
+
 
 
 footer{
     padding: 8px;
     background-color: lightblue;
+    display: flex;
+    justify-content: center;
 }
