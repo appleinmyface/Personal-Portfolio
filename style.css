@@ -1,0 +1,27 @@
+html{
+
+    background-color: white;
+    border: solid black;
+    margin: auto;
+}
+
+header{
+    margin: -2px;
+    padding: 8px;
+    background-color: lightblue;
+    text-align: center;
+}
+
+header ul li{
+    display: inline;
+    color:black;
+    font-weight: bold;
+      padding: 8px;
+      background-color: lightblue; 
+}
+
+
+footer{
+    padding: 8px;
+    background-color: lightblue;
+}
