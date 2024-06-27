@@ -43,7 +43,8 @@ a:link {
 }
 
 a:hover {
-    color: white;
+    color: blue;
+    transition: scale(1.1);
 }
 
 
