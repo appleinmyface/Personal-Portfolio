@@ -31,6 +31,7 @@ header ul {
 
 header ul li {
     padding: 5px;
+    width: 20%;
     border: black solid;
     background-color: white;
     text-decoration: underline;
@@ -42,8 +43,9 @@ a:link {
 }
 
 a:hover {
-    color: red;
+    color: white;
 }
+
 
 .flexbox {
     display: flex;
@@ -58,44 +60,73 @@ a:hover {
     border: 1px solid #ccc;
     margin: 10px;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .left-column {
-    order: 2; /* Ensure left column appears after right column */
+    order: 1; /* Ensure left column appears after right column */
 }
 
 .right-column {
-    order: 1; /* Ensure right column appears before left column */
+    order: 2; /* Ensure right column appears before left column */
 }
 
 .image-container {
     max-width: 50%; /* Adjust size of the image */
     max-height: auto; /* Maintain aspect ratio */
+    min-width: 50%;
+    min-height: auto;
     background-color: #ddd;
     display: flex;
     align-items: right ;
     justify-content: right;
     flex-wrap: wrap;
+    display: inline;
 }
 
 .image-container img {
     max-width: 33%;
     height: auto;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .image-caption {
-    margin-top: 10px;
-    text-align: center;
+    margin-top: 100px;
+    text-align: left;
     font-style: italic;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@media screen and (max-width: 950px) {
+    
+    .image-container {
+        max-width: 50%;
+    }
+
+    .image-container img {
+        max-width: 50%;
+    }
+    .flexbox {
+        flex-direction: column;
+    }
+    header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    header ul li{
+        width: 50%;
+    }
+    
 }
 
 .content-section {
     width: 100%;
     margin-bottom: 20px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
 }
@@ -113,7 +144,7 @@ a:hover {
     width: 100%;
     padding: 10px;
     background-color: #f4f4f4;
-    text-align: center;
+    text-align: justify;
     flex-wrap: wrap;
 }
 
@@ -122,6 +153,16 @@ header ul li:hover {
     transform: scale(1.1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+article p{
+
+    text-align: justify;
+}
+
+#contact ul li{
+    display: inline;
+    padding: 5px 10px;
+    font-size: larger;
+}
 
 footer{
     padding: 8px;
@@ -129,3 +170,4 @@ footer{
     text-align: center;
     font-weight: bold;
 }
+
